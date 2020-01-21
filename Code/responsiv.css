@@ -1,0 +1,188 @@
+/*
+				RESPONSIV DESIGN DU PROJET [1] WEB-AGENCY
+				ADAPTATION DE L'AFFICHAGE DE 300 A 2000PX
+				POUR LES SMARTPHONES, TABLETTES, ORDINATEURS ET TELEVISIONS
+*/
+
+/*
+POUR LES ECRANS [TYPE SMARTPHONE] D'UNE TAILLE COMPRIS ENTRE 300PX ET 767PX 
+*/
+
+@media (min-width: 300px) and (max-width: 767px)
+{
+	#bloc-all-page {
+		width: auto;
+		padding: 10px;
+	}
+	section {
+		padding-top: 132px;
+		margin: 0;
+	}
+	br {
+		display: none;
+	}
+	header {
+		flex-direction: column;
+		height: auto;
+	}
+	#logo-web-agency {
+		margin: 20px 20px 0 0;
+	}
+	#header-principal-menu ul {
+		padding: 0;
+	}
+	#header-principal-menu a {
+		padding: 10px 10px 10px 5px;
+	}
+	#photo-1-slider {
+		display: none;
+	}
+	#accueil-body i {
+		display: none;
+	}
+	#accueil-description {
+		position: static;
+		text-align: center;
+		color: rgba(0, 0, 0, 0.8);
+	}
+	.header-section p {
+		width: 70%;
+	}
+	.services-body {
+		margin: 0;
+	}
+	#img-mac {
+		display: none;
+	}
+	.services-info {
+		margin: 15px;
+	}
+	.services-info ul {
+		padding: 0;
+		margin: 0;
+	}
+	.bloc-logo {
+		margin: 40px 20px 0 0;
+		font-size: 70%;
+	}
+	.bloc-logo .fa-circle {
+		top: 24px;
+	}
+	.bloc-text {
+		width: 80%;
+		text-align: justify;
+	}
+	.folio-menu a {
+		padding: 9px;
+	}
+	.link-all-works a {
+  padding-bottom: 6px;
+	}
+	figure figcaption {
+		display: block;
+		height: 35%;
+	}
+	figcaption p {
+		white-space: pre-line;
+		padding: 0 5px 10px 10px;
+	}
+	#formulaire {
+		white-space: pre-line;
+		position: static;
+		width: 80%;
+	}
+	#formulaire #submit {
+		width: auto;
+	}
+}
+
+/*
+POUR ECRANS [TYPE TABLETTE] D'UNE TAILLE COMPRIS ENTRE 768PX ET 991PX 
+*/
+
+@media (min-width: 768px) and (max-width: 991px)
+{
+	#accueil-description {
+		font-size: 1.1em;
+		top: 22%;
+		left: 6%;
+	}
+	#img-mac {
+		display: none;
+	}
+	.services-info ul {
+		padding: 0;
+	}
+	.services-info {
+		margin: 0px 30px 0 0;
+	}
+	.bloc-logo {
+		margin: 40px 20px 0 0;
+		font-size: 70%;
+	}
+	.bloc-logo .fa-circle {
+		top: 24px;
+	}	
+	.bloc-text {
+		width: 80%;
+		text-align: justify;
+	}
+	.folio-body {
+		width: auto;
+	}
+	figure figcaption {
+	display: block;
+	}
+}
+
+/*
+POUR LES ECRANS [TYPE ECRAN D'ORDINATEUR STANDARD] D'UNE TAILLE COMPRIS ENTRE 992PX ET 1199PX
+*/
+
+@media (min-width: 992px) and (max-width: 1199px)
+{
+	#accueil-description {
+		font-size: 1.3em;
+		top: 22%;
+		left: 6%;
+	}
+	#img-mac {
+		display: none;
+	}
+}
+
+/* POUR LES GRANDS ECRANS ET LES TELEVISONS */
+
+@media (min-width: 1200px)
+{
+	.folio-body {
+		max-width: 1800px;
+	}
+}
+
+/* CORRECTION DE BUGS */
+
+/*
+POUR QUE LES IMAGES DU PORTFOLIO SOIENT CLASSES SOIT EN 2 COLONNES SOIT EN 2 LIGNES
+*/
+
+@media (min-width: 1266px) and (max-width: 1688px)
+{
+	.folio-body {
+		width: 1000px;
+	}
+} 
+
+/* REDUCTION DE LA TAILLE DU MENU DU PORTFOLIO SUR LES TRES PETITS ECRANS DE SMARTPHONE 
+[TYPE IPHONE 5] POUR RESOUDRE LE BUG AFFICHAGE DU ALL WORKS
+*/
+
+@media (min-width: 300px) and (max-width: 350px)
+{
+	.folio-menu {
+		font-size: 0.8em;
+	}
+}
+/* ALIGNEMENTS POINTS BLEUS DES LOGOS SUR L'AXE HORIZONTAL DANS LA PARTIE -SERVICES- */
+
+

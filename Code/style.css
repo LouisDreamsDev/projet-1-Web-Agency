@@ -1,0 +1,365 @@
+@font-face {
+  font-family: 'roboto-black';
+  src: url('webagency_images/webagency_images/fonts/Roboto-Black.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'roboto-bold';
+  src: url('webagency_images/webagency_images/fonts/Roboto-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'roboto-medium';
+  src: url('webagency_images/webagency_images/fonts/Roboto-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'roboto-light';
+  src: url('webagency_images/webagency_images/fonts/Roboto-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'roboto-regular';
+  src: url('webagency_images/webagency_images/fonts/Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'roboto-thin';
+  src: url('webagency_images/webagency_images/fonts/Roboto-Thin.ttf') format('truetype');
+}
+body {
+  margin: 0;
+}
+#bloc-all-page {
+  margin: 0;
+}
+section {
+  padding: 100px 0 0 0;
+}
+
+/* Header de navigation - fixe sur toute la page */
+
+header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  z-index: 4;
+  background-color: #fff;
+}
+#header-principal-menu ul {
+  display: flex;
+  list-style-type: none;
+}
+#header-principal-menu a {
+  padding: 38px 18px 0 18px;
+  text-decoration: none;
+  font-family: Arial;
+  font-size: 0.9em;
+  color: #232323;
+}
+#header-principal-menu a:hover {
+  border-top: 3px solid #5cadd3;
+}
+
+/* Section Accueil - image et courte description du site */
+
+#accueil-body {
+  position: relative;
+}
+#photo-1-slider {
+  width: 100%;
+}
+#accueil-description {
+  position: absolute;
+  left: 12%;
+  top: 30%;
+  color: #fff;
+  font-family: 'roboto-black', Arial, sans-serif;
+  font-size: 1.5em;
+}
+#accueil-description strong {
+  color: #5cadd3;
+}
+#fleche-gauche i {
+  width: 35px;
+  height: 70px;
+  position: absolute;
+  left: 0%;
+  top: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0 150px 150px 0;
+  font-size: 2em;
+}
+#fleche-droite i {
+  width: 35px;
+  height: 70px;
+  position: absolute;
+  right: 0%;
+  top: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 150px 0px 0px 150px;
+}
+#bouton-info {
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.8em;
+  color: white;
+  background-color: #5cadd3;
+  border-radius: 4px;
+  border-bottom: 4px solid #6790b8;
+}
+
+/* Section Services - image et liste des differents services propose */
+
+.header-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  font-family: 'roboto-light', sans-serif;
+}
+.title-section {
+  margin: auto;
+  font-family: 'Roboto-Bold', sans-serif;
+  font-weight: normal;
+  font-size: 3.2em;
+}
+.separation {
+  position: relative;
+}
+hr {
+  width: 200px;
+  margin: 30px;
+  opacity: 0.4;
+}
+.fa-circle {
+  position: absolute;
+  top: 20px;
+  right: 46%;
+  color: #5cadd3;
+  border: 4px solid #fff;
+  border-radius: 100%;
+}
+.services-body {
+  display: flex;
+  justify-content: center;
+  margin: 70px 0 0 70px;
+  font-family: 'roboto-light';
+}
+.services-info {
+  width: 650px;
+  margin: 60px;
+  text-align: justify;
+  letter-spacing: 0.3px;
+}
+.services-info li {
+  display: flex;
+}
+.bloc-logo {
+  position: relative;
+  margin: 30px 40px 0 0;
+}
+.bloc-text h3 {
+  font-family: 'roboto-black';
+  font-weight: normal;
+}
+.logo-symbol {
+  font-size: 1.7em;
+  color: #5cadd3;
+  border: 1px solid #bab;
+  border-radius: 100%;
+  padding: 20px;
+}
+.bloc-logo .fa-circle {
+  font-size: 0.6em;
+  top: 26px;
+  right: -8px;
+}
+
+/* Section portfolio - [balises du header identiques pour la section services] */
+
+#portfolio {
+  background-color: #f5f5f5;
+}
+
+/* Menu de la section portfolio */
+
+.folio-menu ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 0;
+  margin: 30px 0 50px 0;
+}
+.folio-menu li {
+  position: relative;
+}
+.folio-menu a {
+  padding: 11px;
+  text-decoration: none;
+  font-family: 'roboto-regular';
+  color: black;
+  background-color: rgba(100, 100, 100, 0.12); 
+}
+.folio-menu li:hover a {
+  color: white;
+  background-color: #5cadd3;  
+  border-bottom: 3px solid #468cad;
+  padding-bottom: 8px;
+}
+.link-all-works .fa-caret-down {
+  display: block;
+}
+.link-all-works a {
+  border-radius: 4px 0 0 4px;
+  color: white;
+  background-color: #5cadd3;  
+  border-bottom: 3px solid #468cad;
+  padding-bottom: 8px;
+}
+.link-portfolio a {
+  border-radius: 0 4px 4px 0;
+}
+li .fa-caret-down {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 42%;
+  color: #468cad;
+  font-size: 1.5em;
+}
+.folio-menu li:hover .fa-caret-down {
+  display: block;
+}
+
+/* Corps de la section portfolio */
+/* Organisation des images et de leur style */
+
+.folio-body {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+figure {
+  width: 300px;
+  height: 200px;
+  position: relative;
+}
+figure img {
+  width: 300px;
+}
+figure figcaption {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  font-family: 'roboto-regular';
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+figure:hover figcaption {
+  display: block;
+}
+figcaption p {
+  padding: 0 0 0px 10px;
+}
+.fa-eye {
+  position: absolute;
+  z-index: 2;
+  right: 5%;
+  bottom: 68%;
+  padding: 12px;
+  color: #fff;
+  background-color: #5cadd3;
+  border: 2px solid white;
+  border-radius: 100%;
+}
+
+/* Section Contact - formulaire avec une google-map bleue en fond */
+
+.contact-body {
+  position: relative;
+}
+#google-map {
+  height: 940px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.color-google-map {
+  width: 100%;
+  height: 940px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(92, 173, 211, 0.45);
+  pointer-events: none;
+  border: none;
+}
+#formulaire {
+  width: 450px;
+  position: absolute;
+  top: 100px;
+  right: 150px;
+  z-index: 3;
+  padding: 30px;
+  font-family: 'roboto-regular';
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 5px;
+}
+#formulaire h1 {
+  margin: 0;
+  font-size: 1.8em;
+  font-family: 'Roboto-Bold';
+  font-weight: normal;
+}
+#formulaire span {
+  font-weight: bold;
+}
+#formulaire input {
+  width: 95%;
+  margin: 10px 0 10px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid rgba(100, 100, 100, 0.4);
+  border-radius: 4px;
+}
+#formulaire ::placeholder {
+  font-family: sans-serif;
+  color: rgba(0, 0, 0, 1);
+}
+textarea {
+  width: 95%;
+  height: 200px;
+  margin: 10px 10px 20px 0;
+  padding: 10px;
+  font-family: sans-serif;
+  color: rgba(0,0,0, 1);
+  background-color: white;
+  border: 1px solid rgba(100, 100, 100, 0.4);
+  border-radius: 4px;
+}
+#formulaire #submit {
+  width: 35%;
+  text-decoration: none;
+  text-align: center;
+  font-family: sans-serif;
+  color: #fff;
+  background-color: #5cadd3;
+  border-radius: 4px;
+  border-bottom: 4px solid #6790b8;
+}
